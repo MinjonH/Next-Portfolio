@@ -9,7 +9,7 @@ const Main = () => {
 			<div className='inner'>
 				<div>
 					<h1 className='line1'>
-						Hi, I'm <span>Minjon</span>
+						Hi, I&apos;m <span>Minjon</span>
 					</h1>
 					<h1>A Junior Full-stack Developer</h1>
 					<p>
@@ -21,6 +21,7 @@ const Main = () => {
 						<a
 							href='https://www.linkedin.com/in/minjon-holtzhausen'
 							target='_blank'
+							rel='noreferrer'
 						>
 							<div className='icon'>
 								<BsLinkedin />
@@ -28,14 +29,22 @@ const Main = () => {
 						</a>
 
 						{/* GitHub profile */}
-						<a href='https://github.com/MinjonH' target='_blank'>
+						<a
+							href='https://github.com/MinjonH'
+							target='_blank'
+							rel='noreferrer'
+						>
 							<div className='icon'>
 								<FaGithub />
 							</div>
 						</a>
 
 						{/* Email */}
-						<a href='mailto:minjon.holtzhausen@gmail.com' target='_blank'>
+						<a
+							href='mailto:minjon.holtzhausen@gmail.com'
+							target='_blank'
+							rel='noreferrer'
+						>
 							<div className='icon'>
 								<AiOutlineMail />
 							</div>

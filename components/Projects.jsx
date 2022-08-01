@@ -9,7 +9,7 @@ const Projects = () => {
 		<div id='projects' className='container'>
 			<div className='inner'>
 				<p className='about'>Projects</p>
-				<h2>What I've Built</h2>
+				<h2>What I&apos;ve Built</h2>
 				<div className='grid'>
 					<ProjectItem
 						title='Weather app'

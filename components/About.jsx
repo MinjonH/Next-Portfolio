@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import AboutImg from '../public/assets/about-img.jpg';
 
 const About = () => {
@@ -17,7 +18,7 @@ const About = () => {
 						career path.
 					</p>
 					<p>
-						It didn't immediately occur to me that I could monetise on my
+						It didn&apos;t immediately occur to me that I could monetise on my
 						computer skills, and I was also hesitant to commit a degree, which
 						is why I was drawn to the HyperionDev bootcamp – it was not
 						extremely long, and I could also do it part-time, since I already
@@ -32,9 +33,9 @@ const About = () => {
 						myself to learn other technologies before starting the Software
 						Development bootcamp in January 2023.
 					</p>
-					<a href='/#projects'>
+					<Link href='/#projects'>
 						<p className='link'>See some of my latest projects</p>
-					</a>
+					</Link>
 				</div>
 				<div className='right-side'>
 					<Image src={AboutImg} alt='/' />
