@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import NavLogo from '../public/assets/navLogo.png';
 
 const Navbar = () => {
 	const [shadow, setShadow] = useState(false);
@@ -19,12 +20,7 @@ const Navbar = () => {
 	return (
 		<div className={shadow ? 'shadowContainer' : 'firstContainer'}>
 			<div className='secondContainer'>
-				<Image
-					src='/../public/assets/navLogo.png'
-					alt='logo'
-					width='115'
-					height='80'
-				/>
+				<Image src={NavLogo} alt='logo' width='115' height='80' />
 				<div>
 					<ul>
 						<Link href='/'>
