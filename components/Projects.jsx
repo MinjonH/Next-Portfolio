@@ -2,6 +2,7 @@ import React from 'react';
 import WeatherApp from '../public/assets/projects/weatherApp.png';
 import ItunesApp from '../public/assets/projects/itunes-app.png';
 import Minesweeper from '../public/assets/projects/minesweeper.png';
+import NetflixClone from '../public/assets/projects/netflix-clone.jpg';
 import ProjectItem from './ProjectItems';
 
 const Projects = () => {
@@ -25,6 +26,11 @@ const Projects = () => {
 						title='Minesweeper'
 						backgroundImg={Minesweeper}
 						projectUrl='https://task13-minesweeper.herokuapp.com/'
+					/>
+					<ProjectItem
+						title='Netflix Clone'
+						backgroundImg={NetflixClone}
+						projectUrl='https://netflix-clone-phi-neon.vercel.app/'
 					/>
 				</div>
 			</div>
