@@ -13,14 +13,14 @@ const About = () => {
 						About
 					</p>
 					<h2 className='py-4'>Who I Am</h2>
-					<p className='py-2 text-gray-600 text-xl'>
+					<p className='py-2 text-gray-600 text-[15pt]'>
 						I graduated high school in 2021, with no clue what career I was
 						willing to pursue. The mere idea of studying another 4-10 years for
 						a degree and then doing the same repetitive work day in and day out
 						for the next 50 years had me struggling to commit to any specific
 						career path.
 					</p>
-					<p className='py-2 text-gray-600'>
+					<p className='py-2 text-gray-600 text-[15pt]'>
 						It didn&apos;t immediately occur to me that I could monetise on my
 						computer skills, and I was also hesitant to commit a degree, which
 						is why I was drawn to the HyperionDev bootcamp – it was not
@@ -28,7 +28,7 @@ const About = () => {
 						accepted a job offer as high-school tutor and was planning on
 						working while studying.
 					</p>
-					<p className='py-2 text-gray-600'>
+					<p className='py-2 text-gray-600 text-[15pt]'>
 						The bootcamp turned out to be the best decision I could have made,
 						now I am confident and genuinely excited to becoming a developer. I
 						am graduating the Full-stack Web Development bootcamp in August 2022
