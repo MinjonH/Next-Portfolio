@@ -7,54 +7,35 @@ import ProjectItem from './ProjectItems';
 
 const Projects = () => {
 	return (
-		<div id='projects' className='container'>
-			<div className='inner'>
-				<p className='about'>Projects</p>
+		<div id='projects' className='w-full'>
+			<div className='max-w-[1240px] m-auto px-2 py-16'>
+				<p className='text-xl tracking-widest uppercase text-[#9C89B8]'>
+					Projects
+				</p>
 				<h2>What I&apos;ve Built</h2>
-				<div className='grid'>
+				<div className='grid md:grid-cols-2 gap-8'>
 					<ProjectItem
-						title='Weather app'
-						backgroundImg={WeatherApp}
-						projectUrl='https://weather-app010.herokuapp.com/'
+						title='Netflix Clone'
+						bgImage={NetflixClone}
+						projectURL='https://netflix-clone-phi-neon.vercel.app/'
 					/>
 					<ProjectItem
-						title='iTunes Search Api'
-						backgroundImg={ItunesApp}
-						projectUrl='https://itunes-api-server.herokuapp.com/'
+						title='Weather App'
+						bgImage={WeatherApp}
+						projectURL='https://weather-app010.herokuapp.com/'
 					/>
 					<ProjectItem
 						title='Minesweeper'
-						backgroundImg={Minesweeper}
-						projectUrl='https://task13-minesweeper.herokuapp.com/'
+						bgImage={Minesweeper}
+						projectURL='https://task13-minesweeper.herokuapp.com/'
 					/>
 					<ProjectItem
-						title='Netflix Clone'
-						backgroundImg={NetflixClone}
-						projectUrl='https://netflix-clone-phi-neon.vercel.app/'
+						title='iTunes App'
+						bgImage={ItunesApp}
+						projectURL='https://itunes-api-server.herokuapp.com/'
 					/>
 				</div>
 			</div>
-			<style jsx>{`
-				.about {
-					color: #9984d4;
-					font-weight: 450;
-					font-size: 20pt;
-					line-height: 1.75rem;
-					text-transform: uppercase;
-					letter-spacing: 0.1em;
-					margin-top: 10%;
-					text-align: center;
-				}
-
-				h2 {
-					text-align: center;
-				}
-
-				.grid {
-					display: grid;
-					grid-template-columns: repeat(2, minmax(0, 1fr));
-				}
-			`}</style>
 		</div>
 	);
 };
