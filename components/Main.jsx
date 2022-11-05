@@ -1,7 +1,7 @@
 import React from 'react';
-import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { IoCallOutline } from 'react-icons/io';
 
 const Main = () => {
 	return (
@@ -9,12 +9,14 @@ const Main = () => {
 			<div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
 				<div>
 					<h1 className='py-4 text-gray-700'>
-						Hi, I&apos;m <span className='text-[#9C89B8]'>Minjon</span>
+						Hi! I&apos;m{' '}
+						<span className='text-[#9C89B8]'>Minjon Holtzhausen</span>
 					</h1>
-					<h1 className='py-2 text-gray-700'>A Junior Full-stack Developer</h1>
+					<h1 className='py-2 text-gray-700'>An Aspiring Web Developer</h1>
 					<p className='text-gray-600 max-w-[70%] m-auto py-4'>
-						I am an aspiring Full-stack Web Developer and student. Along with
-						studing part-time, I am employed as a full-time high-school tutor.
+						I completed the HyperionDev Fullstack Web Development course in
+						August 2022 and am planning to enrol in the HyperionDev Software
+						Engineering course in the beginning of 2023.
 					</p>
 
 					{/* icons container */}
@@ -26,7 +28,7 @@ const Main = () => {
 							rel='noreferrer'
 						>
 							<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-								<FaLinkedinIn />
+								<FaLinkedinIn title='LinkedIn' />
 							</div>
 						</a>
 
@@ -37,7 +39,7 @@ const Main = () => {
 							rel='noreferrer'
 						>
 							<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-								<FaGithub />
+								<FaGithub title='GitHub' />
 							</div>
 						</a>
 
@@ -48,13 +50,13 @@ const Main = () => {
 							rel='noreferrer'
 						>
 							<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-								<AiOutlineMail />
+								<AiOutlineMail title='Email' />
 							</div>
 						</a>
 						{/* Call or message */}
 						<a href='tel:+27836029730'>
 							<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-								<BsFillPersonLinesFill />
+								<IoCallOutline title='Call or Message' />
 							</div>
 						</a>
 					</div>

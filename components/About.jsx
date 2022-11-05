@@ -5,7 +5,7 @@ import AboutImg from '../public/assets/about-img.jpg';
 
 const About = () => {
 	return (
-		<div id='about' className='w-full md:w-screen flex py-16 items-center'>
+		<div id='about' className='w-full flex py-16 items-center'>
 			{/* left container */}
 			<div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
 				<div className='col-span-2'>
@@ -14,11 +14,11 @@ const About = () => {
 					</p>
 					<h2 className='py-4'>Who I Am</h2>
 					<p className='py-2 text-gray-600 text-[15pt]'>
-						I graduated high school in 2021, with no clue what career I was
-						willing to pursue. The mere idea of studying another 4-10 years for
-						a degree and then doing the same repetitive work day in and day out
-						for the next 50 years had me struggling to commit to any specific
-						career path.
+						I graduated high school in 2021, with no idea which career I was
+						interested to pursue. The mere idea of studying another 4-10 years
+						for a degree and then doing the same repetitive work day in and day
+						out for the next 50 years had me struggling to commit to any
+						specific career path.
 					</p>
 					<p className='py-2 text-gray-600 text-[15pt]'>
 						It didn&apos;t immediately occur to me that I could monetise on my

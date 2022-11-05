@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { IoCallOutline } from 'react-icons/io';
 import NavLogo from '../public/assets/navLogo.png';
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
 					: 'fixed w-full h-20 z-[100]'
 			}
 		>
-			<div className='flex justify-between items-center w-full h-full px-2 2xl-px-16'>
+			<div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
 				<Image src={NavLogo} alt='logo' width='115' height='80' />
 				<div>
 					<ul className='hidden md:flex'>
@@ -94,9 +94,6 @@ const Navbar = () => {
 									<li className='py-4 text-sm'>About</li>
 								</Link>
 								<Link href='/'>
-									<li className='py-4 text-sm'>Skills</li>
-								</Link>
-								<Link href='/'>
 									<li className='py-4 text-sm'>Projects</li>
 								</Link>
 								<Link href='/'>
@@ -106,18 +103,41 @@ const Navbar = () => {
 							<div className='pt-40 uppercase tracking-widest text-[#9C89B8]'>
 								<p>Let's Connect</p>
 								<div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-300'>
-										<FaLinkedinIn />
-									</div>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-300'>
-										<FaGithub />
-									</div>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-300'>
-										<AiOutlineMail />
-									</div>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-300'>
-										<BsFillPersonLinesFill />
-									</div>
+									<a
+										href='https://www.linkedin.com/in/minjon-holtzhausen'
+										target='_blank'
+										rel='noreferrer'
+									>
+										<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-300'>
+											<FaLinkedinIn />
+										</div>
+									</a>
+
+									<a
+										href='https://github.com/MinjonH'
+										target='_blank'
+										rel='noreferrer'
+									>
+										<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-300'>
+											<FaGithub />
+										</div>
+									</a>
+
+									<a
+										href='mailto:minjon.holtzhausen@gmail.com'
+										target='_blank'
+										rel='noreferrer'
+									>
+										<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-300'>
+											<AiOutlineMail />
+										</div>
+									</a>
+
+									<a href='tel:+27836029730'>
+										<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 duration-300'>
+											<IoCallOutline />
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>
