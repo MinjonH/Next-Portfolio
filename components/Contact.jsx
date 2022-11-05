@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
+import { IoCallOutline } from 'react-icons/io5';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
@@ -28,9 +28,12 @@ const Contact = () => {
 							</div>
 							<div>
 								<h2 className='py-2'>Minjon Holtzhausen</h2>
-								<p>Junior Front-End Developer</p>
+								<p className='text-gray-500'>
+									<i>Junior Web Developer</i>
+								</p>
 								<p className='py-4'>
-									I am available for full-time or part-time positions.
+									I am available for full-time or part-time positions. I am able
+									to work remotely.
 								</p>
 							</div>
 							<div>
@@ -42,7 +45,7 @@ const Contact = () => {
 										rel='noreferrer'
 									>
 										<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-											<FaLinkedinIn />
+											<FaLinkedinIn title='LinkedIn' />
 										</div>
 									</a>
 									<a
@@ -51,12 +54,12 @@ const Contact = () => {
 										rel='noreferrer'
 									>
 										<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-											<FaGithub />
+											<FaGithub title='GitHub' />
 										</div>
 									</a>
 									<a href='tel:+27836029730'>
 										<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-											<BsFillPersonLinesFill />
+											<IoCallOutline title='Call' />
 										</div>
 									</a>
 								</div>
@@ -128,7 +131,7 @@ const Contact = () => {
 						<a>
 							<div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
 								<HiOutlineChevronDoubleUp
-									className='text-[#5651e5]'
+									className='text-[#6a2eb9]'
 									size={30}
 								/>
 							</div>

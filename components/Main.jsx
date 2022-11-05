@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { IoCallOutline } from 'react-icons/io';
+import { IoCallOutline } from 'react-icons/io5';
 
 const Main = () => {
 	return (

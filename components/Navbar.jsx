@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { IoCallOutline } from 'react-icons/io';
+import { IoCallOutline } from 'react-icons/io5';
 import NavLogo from '../public/assets/navLogo.png';
 
 const Navbar = () => {
