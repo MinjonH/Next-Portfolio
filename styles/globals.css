@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
@@ -12,7 +11,11 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide m-0 overflow-hidden text-center h-full
+  }
+
+  html{
+    @apply h-full
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -28,7 +31,7 @@ html {
   }
   
   li {
-    @apply cursor-pointer
+    @apply cursor-pointer 
   }
 
   label{
@@ -36,6 +39,18 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#8157a8] to-[#6e39b3] text-white font-bold
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#9e79c0] to-[#856ea3] text-white font-bold
   }
 }
+
+@layer components{
+    #gallery{
+        @apply h-[140vmax] w-[140vmax] absolute
+    }
+
+    .tile{
+        @apply rounded-[1vmax] absolute transition ease-in duration-700
+     }
+
+}
+

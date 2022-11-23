@@ -30,26 +30,38 @@ const Navbar = () => {
 			className={
 				shadow
 					? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[#f4f6f7]'
-					: 'fixed w-full h-20 z-[100]'
+					: 'fixed w-full h-20 z-[100] bg-[#f4f6f7]'
 			}
 		>
 			<div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-				<Image src={NavLogo} alt='logo' width='115' height='80' />
+				<Link href='/'>
+					<Image
+						className='cursor-pointer'
+						src={NavLogo}
+						alt='logo'
+						width='115'
+						height='80'
+					/>
+				</Link>
 				<div>
 					<ul className='hidden md:flex'>
 						<Link href='/'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
+							<li className='ml-10 text-sm uppercase hover:border-b hover:border-gray-400'>
+								Home
+							</li>
 						</Link>
-						<Link href='/#about'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>About</li>
-						</Link>
-						<Link href='/#projects'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>
+						{/* <Link href='/about'>
+							<li className='ml-10 text-sm uppercase hover:border-b hover:border-gray-400'>
+								About
+							</li>
+						</Link> */}
+						<Link href='/projects'>
+							<li className='ml-10 text-sm uppercase hover:border-b hover:border-gray-400'>
 								Projects
 							</li>
 						</Link>
-						<Link href='/#contact'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>
+						<Link href='/contact'>
+							<li className='ml-10 text-sm uppercase hover:border-b hover:border-gray-400'>
 								Contact
 							</li>
 						</Link>

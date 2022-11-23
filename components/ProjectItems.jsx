@@ -1,25 +1,26 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
-const ProjectItems = ({ title, bgImage, projectURL }) => {
+const ProjectItems = ({
+	title,
+	bgImage,
+	projectURL,
+	aboutProject,
+	languages,
+}) => {
 	return (
-		<div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#d87ff3] to-[#94317e]'>
-			<Image
-				className='rounded-xl group-hover:opacity-10'
-				src={bgImage}
-				alt='/'
-			/>
-			<div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-				<h3 className='text-2xl text-white tracking-wider text-center pb-2'>
-					{title}
-				</h3>
-				<Link href={projectURL}>
-					<p className='text-center bg-white text-gray-700 rounded-lg font-bold cursor-pointer text-lg'>
-						View
-					</p>
-				</Link>
-			</div>
+		<div className='relative items-center bg-[#f2f5f8] justify-center h-fit w-full shadow-xl shadow-gray-400 rounded-xl p-4'>
+			<Image className='rounded-xl' src={bgImage} alt='/' />
+			<h3 className='text-2xl pt-2 tracking-wider text-center text-[#a981b4]'>
+				{title}
+			</h3>
+			<p className='text-sm italic pb-4 text-gray-400'>{languages}</p>
+			<p className='text-left'>{aboutProject}</p>
+			<a href={projectURL} target='_blank'>
+				<p className='text-center font-bold text-gray-800 hover:underline cursor-pointer text-sm  px-16 py-2'>
+					View
+				</p>
+			</a>
 		</div>
 	);
 };
